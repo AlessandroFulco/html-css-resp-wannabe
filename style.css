@@ -81,10 +81,12 @@ img {
 @media screen and (max-width: 420px) {
   .container {
     width: 100%;
+    font-size: 13px;
+    padding: 10px 0;
   }
   .row {
-    width: auto;
     margin-top: 0;
+    width: calc(100% - 30px);
   }
 
   #lezioni .row>.left,
@@ -94,22 +96,12 @@ img {
   #steps .row>.right {
     float: none;
     width: 100%;
-  }
-  #lezioni .row>.left,
-  #lezioni .row>.right {
-    margin-top: 20px;
-  }
-  /* sezione 1 */
-  #lezioni {
-    background-color: #f2f2cd;
     padding: 10px 0;
   }
-  .container {
-    font-size: 13px;
+  #lezioni, #why {
+    background-color: #f2f2cd;
   }
-  .row {
-    width: calc(100% - 30px);
-  }
+  /* sezione lezioni */
   #lezioni h1 {
     font-size: 30px;
   }
@@ -117,11 +109,8 @@ img {
     width: 150px;
     height: auto;
   }
-
-  /* sezione 2 */
-  #steps {
-    padding-top: 10px;
-  }
+  /* sezione steps */
+  #steps .row . left
   #steps h1 {
     margin-bottom: 20px;
   }
@@ -129,5 +118,16 @@ img {
     width: 100px;
     height: auto;
   }
-  
+  /* sezione perche cademi */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+  margin-top: 20px;
+  }
+  #why {
+    padding-top: 10px;
+  }
+  #why .row img {
+    padding: 20px
+  }
 }
